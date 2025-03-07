@@ -1,0 +1,36 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* それぞれの検索エンジンには独自のCSSが存在するので、
+  それの影響を受けないように、リセットCSSを用いる。 */
+  /* 上記コードがリセットCSS */
+  .main-visual {
+    width: 100%; /* 横幅いっぱい */
+    height: 300px; /* 高さ300px */
+  }
+  
+  .main-visual-content {
+    width: 350px; /* 横幅350px */
+    height: 300px; /* 親の高さに揃える */
+  }
+  .main {
+    width: 840px;
+    /* height: 1400px; */
+    /* background-color: green; */
+    display: flex; /* Flexboxの利用 */
+    justify-content: center; /* 子要素の横並び・中央寄せ */
+    margin:0 auto;
+  }
+  .blog {
+    width: 600px; /* 横幅600px */
+    height: 1400px; /* 高さ600px */
+  }
+  .sidebar {
+    width: 240px; /* 横幅240px */
+    height: 1400px; /* 高さ600px */
+  }
+/* background-color: blue;  左記は例示的に残しておk*/
+/* Flex boxについて実行する */
