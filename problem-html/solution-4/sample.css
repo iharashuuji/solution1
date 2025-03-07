@@ -7,6 +7,32 @@
   /* それぞれの検索エンジンには独自のCSSが存在するので、
   それの影響を受けないように、リセットCSSを用いる。 */
   /* 上記コードがリセットCSS */
+  header {
+    width: 90%; /* 横幅90% */
+    padding: 15px 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  header .heading { /* headerタグ内のheadingクラスにのみ反映される */
+    font-size: 32px;
+  }
+  
+  .nav-list {
+    text-align: center;
+    /* alignは、Right,leftもある。 */
+    padding: 10px 0;
+    margin: 0 auto;
+  }
+  
+  .nav-list-item {
+    /* 先頭にどんな〇を付けるかを記載　Listの・の奴 */
+    list-style: none;
+    /* display： */
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
   .main-visual {
     width: 100%; /* 横幅いっぱい */
     height: 300px; /* 高さ300px */
@@ -16,21 +42,34 @@
     width: 350px; /* 横幅350px */
     height: 300px; /* 親の高さに揃える */
   }
+  
   .main {
-    width: 840px;
-    /* height: 1400px; */
-    /* background-color: green; */
+    width: 840px; /* 横幅840px */
     display: flex; /* Flexboxの利用 */
-    justify-content: center; /* 子要素の横並び・中央寄せ */
-    margin:0 auto;
+    justify-content: center; /* 要素の横並び・中央寄せ */
+    margin: 0 auto; /* 中央寄せ（左右に余白がないとできない） */
   }
+  
   .blog {
     width: 600px; /* 横幅600px */
-    height: 1400px; /* 高さ600px */
+    height: 1400px; /* 高さ1400px */
   }
+  
   .sidebar {
     width: 240px; /* 横幅240px */
-    height: 1400px; /* 高さ600px */
+    height: 1400px; /* 高さ1400px */
   }
-/* background-color: blue;  左記は例示的に残しておk*/
+  
+  footer {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    background-color: #848282;
+  }
+  .footer-text {
+    color: #fff;
+  }
+   /* background-color: blue;  左記は例示的に残しておk*/
 /* Flex boxについて実行する */
+/* インライン表示は、親要素に挿入するものの事 */
