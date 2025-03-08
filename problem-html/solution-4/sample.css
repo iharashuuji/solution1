@@ -14,8 +14,20 @@
     margin: 0 auto;
     text-align: center;
   }
+  .social i {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .social {
+    position: absolute;
+    top:22px;
+    right:22px;
+  }
   a {
     text-decoration: none;
+  }
+  header, nav, h2, .main-visual, footer {
+    font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print";
   }
   
   header .heading { /* headerタグ内のheadingクラスにのみ反映される */

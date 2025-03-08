@@ -3,7 +3,11 @@
     <link rel="stylesheet" href="sample.css">
   <head>
     <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/58f5ae3073.js" crossorigin="anonymous"></script>
     <!-- CSSファイルの読み込み -->
+    <!-- <link ...>が２つ以上並んでいる状態なら下に行く程重要度が上がる
+    <link 1....>
+    <link 2....>  *2とついているこの行の方が優先順位にが高い-->
     <link rel="stylesheet" href="style.css" />
     <title>CARAVAN</title>
   </head>
@@ -11,13 +15,16 @@
   <body>
     <!-- 一番目のヘッダーは変更して書く。 -->
     <header>
-     <h1>
        <h1 class="heading">
          <a href="sample.css">
            CARAVAN
          </a>
        </h1>
-     </h1>
+       <div class="social">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
+       </div>
     </header>
     <nav>
       <ul class="nav-list">
