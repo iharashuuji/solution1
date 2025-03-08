@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #6c6b6b;
   }
   /* それぞれの検索エンジンには独自のCSSが存在するので、
   それの影響を受けないように、リセットCSSを用いる。 */
@@ -12,6 +13,9 @@
     padding: 15px 0;
     margin: 0 auto;
     text-align: center;
+  }
+  a {
+    text-decoration: none;
   }
   
   header .heading { /* headerタグ内のheadingクラスにのみ反映される */
@@ -56,21 +60,61 @@
     margin-top: 30px; /* 上側の外側の余白 */
     color: #fff; /* 文字色を白に変更 */
   }
-  .main {
-    width: 840px; /* 横幅840px */
+  main {
+    width: 800px; 
+    padding: 70px 0;
     display: flex; /* Flexboxの利用 */
     justify-content: center; /* 要素の横並び・中央寄せ */
     margin: 0 auto; /* 中央寄せ（左右に余白がないとできない） */
   }
-  
   .blog {
-    width: 600px; /* 横幅600px */
-    height: 1400px; /* 高さ1400px */
+    width: 540ox;
+    margin-right: 30px; /* 領域の右側余白 */
+  }
+
+  .blog-heading {
+    border-bottom: 8px solid #f7f7f7;
+    text-align: center;
+    line-height: 0.6;
+  }
+  .blog-box {
+    padding-top:50px;
+  }
+  
+  .blog-item {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f7f7f7;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .blog-image {
+    height:180px;
+  }
+  .blog-text {
+    padding:25px 0 0 30px;
+  }
+  .blog-text-heading {
+    padding-bottom: 15px;
+  }
+  .blog-date {
+    font-size: 12px;
+    display: inline-block;
+  }
+  .category { /*span要素についての指定（クラス名がCATEGORY）*/
+    display: inline-block; 
+    /*inline-blockとは？→
+    inlineのみだと、横に要素が並んで行くだけだが、blockにすると、縦に並べていける。*/
+    padding: 5px 8px;
+    background-color: #acabab;
+    border-radius: 3px;
+    /* border-radiusは丸みを付けるもの */
+    color: #fff;
+    font-size: 11px;
   }
   
   .sidebar {
-    width: 240px; /* 横幅240px */
-    height: 1400px; /* 高さ1400px */
+    width: 230px;
   }
   
   footer {
